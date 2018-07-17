@@ -10,7 +10,7 @@ class Project extends Component {
 
       <React.Fragment>
         <a href={this.props.content.projLink} className="project" id="Feat1">
-          <img src={imgs} alt={this.props.content.name}/>
+          <img src={require (`${this.props.content.imageSrc}`)} alt={this.props.content.name}/>
           <div className="Text">
             <h2 className="ProjectTitle">{this.props.content.name}</h2>
             <div className="ProjectSubtext">{this.props.content.subText}</div>
