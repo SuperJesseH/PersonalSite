@@ -23,18 +23,28 @@ class App extends Component {
     ]
 
     const SoftwareWork = [
-      {name: "DIY Doom Index", imageSrc: "src/imgs/DoomIndex.png",}
+      {name: "Spots", imageSrc: "./imgs/spots.png", projLink: "https://github.com/LaneMiller/Spots", subText: "A vanilla Javascript and Rails based geolocation app", desc: "Spots is an app that helps people meet up at a central location. Simply enter your location and the locations of your friends and click a destination category. Spots will calculate the average point between your group and find the closest restaurant, bar or movie theater. In addition users can add new destinations to their spots database using the google places API."},
+
+      {name: "New DensCity", imageSrc: "./imgs/dencity.png", projLink: "https://api.mapbox.com/styles/v1/superjesseh/cilk3zlya004jaqludlse9hel.html?title=true&access_token=pk.eyJ1Ijoic3VwZXJqZXNzZWgiLCJhIjoiY2lrc2trd3R2MDAwNXVmamNobmNzN3dqbCJ9.6YQ41FTM1t3QfhTEbGgSpA#13/40.7308/-73.96831/29", subText: "A Mapbox project with land use and subway crowding data", desc: "A digital mapping project that highlights the relationship between New York’s over crowded  subways and new construction projects. Data from New York’s planning department was used in conjunction with crowd ratings from a transit advocacy non-profit. Subway lines are color coded based on crowding and the new buildings by number of floors."},
+
+      {name: "Crowd Detector", imageSrc: "./imgs/crowd.png", projLink: "https://docs.google.com/presentation/d/1dCJz6-dolcK_QX40a1dPm8yoPmERUgrKicgm4sFW260/edit?pli=1#slide=id.p", subText: "An image classification project using Python and Tensorflow", desc: "This machine learning project classifies crowding using a retrained convolutional neural net (CNN).  The project is based on Tensorflow, the Imagenet dataset, and three hundred tagged images from various public webcams. The output can be used with a python script on low powered devices such as the RaspberryPi to classify live images."},
     ]
 
     const HardwareWork = [
-      {name: "DIY Doom Index", imageSrc: "src/imgs/DoomIndex.png",}
+      {name: "Everyday Spectacle", imageSrc: "./imgs/spectical.png", projLink: "http://11bsouth.com/?p=452", subText: "A display piece built from canvas and EL wire", desc: "Everyday Spectacle compares the spectacle of New York as a global icon with the quotidian paths of its residents. A series of routes are highlighted in EL wire to construct a an image of NYC carved by its own people. New routes are regularly added ontop of one another to create a bright protruding mesh of illuminated wire that forms a tableau of the city."},
+
+      {name: "ZombieBook Pro", imageSrc: "./imgs/zombie.png", projLink: "https://itpreadymades.wordpress.com/2017/03/22/zombiebook-pro/", subText: "An interactive artwork built with Arduino and salvaged Macbook parts", desc: "A readymade instructional artwork that references the infamous Milgrahm experiments. The user is asked to perform a variety of bizarre tasks to fix a broken computer. It seems to respond to the users attempts with lights and sounds until they are ultimately instructed to pull the plug and bring the computers “life” to an end."},
+
+      {name: "Ahead of the Times", imageSrc: "./imgs/ahead.png", projLink: "https://itpreadymades.wordpress.com/2017/05/05/ahead-of-the-times/", subText: "A shoe with on board Raspberry Pi and mini projector", desc: "Another readymade project. Satbir Multani and I built a pair of shoes that projected news headlines behind the user as they walked around. The objective was to contrast global events with the metaphorical “ground truth” of the user’s present environment. A second pair was made for commercial use with instagram content."},
+
+      {name: "Pointers Chess Set", imageSrc: "./imgs/chess.png", projLink: "http://11bsouth.com/?p=474", subText: "A 3D design project", desc: "A chess set designed with new players in mind. Each piece has a crown that indicates the types of moves it can make on the board. The knight, for instance, has its points arranged in L-shapes and the queen has outward facing points in all eight directions. Prototypes were made using a 4-axis mill and the final set is currently on order for high quality 3D printing."},
     ]
     return (
       <div className="App">
         <Header />
           <Section secName={"Featured"} content={FeaturedWork}/>
-          {/* <Section secName={"Software"} content={SoftwareWork}/>
-          <Section secName={"Hardware"} content={HardwareWork}/> */}
+          <Section secName={"Software"} content={SoftwareWork}/>
+          <Section secName={"Hardware"} content={HardwareWork}/>
         <Footer />
       </div>
     );
