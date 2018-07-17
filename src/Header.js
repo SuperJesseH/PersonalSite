@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import imgs from "./imgs/DoomIndex.png"
+import imgs from "./imgs/thesis4.png"
 import './App.css';
 
 class Header extends Component {

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from "./Header"
 import Section from "./Section"
 import Footer from "./Footer"
+import imgs from "./imgs/thesis4.png"
 import './App.css';
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
 
       {name: "Pointers Chess Set", imageSrc: "./imgs/chess.png", projLink: "http://11bsouth.com/?p=474", subText: "A 3D design project", desc: "A chess set designed with new players in mind. Each piece has a crown that indicates the types of moves it can make on the board. The knight, for instance, has its points arranged in L-shapes and the queen has outward facing points in all eight directions. Prototypes were made using a 4-axis mill and the final set is currently on order for high quality 3D printing."},
     ]
+
     return (
       <div className="App">
         <Header />
