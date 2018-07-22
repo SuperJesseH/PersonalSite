@@ -47,7 +47,7 @@ class App extends Component {
           <Section secName={"Top Projects"} content={FeaturedWork}/>
           <Section secName={"Software"} content={SoftwareWork}/>
           <Section secName={"Hardware"} content={HardwareWork}/>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }
