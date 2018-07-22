@@ -8,8 +8,16 @@ class Header extends Component {
     return (
       <React.Fragment>
         <div className="Header">
-          <h1>Jesse [at] 11BSouth.com</h1>
-          <p>Web Developer, Creative Technologist, Pedestrian</p>
+          <div className="HeaderText">
+            <h1>Jesse [at] 11BSouth.com</h1>
+            <p>Web Developer, Creative Technologist, Pedestrian</p>
+          </div>
+          <span className="navBar">
+            <button>About Me</button>
+            <button>Projects</button>
+            <button>Blog</button>
+          </span>
+          <br />
         </div>
       </React.Fragment>
     );

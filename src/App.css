@@ -11,6 +11,29 @@
   text-decoration-color: 'black';
 }
 
+.navBar button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1%
+}
+
+.navBar button:hover{
+  background-color: #fff; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 
 .Header {
   grid-column: 2 / 5;

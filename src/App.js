@@ -44,7 +44,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-          <Section secName={"Featured"} content={FeaturedWork}/>
+          <Section secName={"Top Projects"} content={FeaturedWork}/>
           <Section secName={"Software"} content={SoftwareWork}/>
           <Section secName={"Hardware"} content={HardwareWork}/>
         <Footer />
