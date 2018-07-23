@@ -100,8 +100,11 @@
 }
 
 .project img{
-  max-width: 100%;
-  max-height: 100%;
+
+  /*  interesting bug using max-width: 100% creates strange behavior on chrome and firefox
+  vw / vh solved all rerender issues*/
+  max-width: 25vw;
+  max-height: 25vh;
   width: auto;
   height: auto;
   border-radius: 1em;
