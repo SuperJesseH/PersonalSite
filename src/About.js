@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 import imgs from "./imgs/DoomIndex.png"
 import './App.css';
 
-class Footer extends Component {
+class About extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <a href="http://11bsouth.com/?page_id=566" className="Footer">
+      <div>
+        <a href="http://11bsouth.com/?page_id=566" className="About">
           <h2>Blog</h2>
         </a>
-      </React.Fragment>
+      </div>
     );
   }
 }
 
-export default Footer;
+export default About;

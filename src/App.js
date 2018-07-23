@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from "./Header"
 import Section from "./Section"
-import Footer from "./Footer"
+import About from "./About"
 import imgs from "./imgs/thesis4.png"
 import './App.css';
 
@@ -10,6 +10,17 @@ class App extends Component {
   constructor(){
     super()
 
+    this.state = {
+      page:"projects"
+    }
+
+  }
+
+
+  // Changes state to selected page on button click
+  // this function is gonna get passed down to header
+  changePage = (toPage) =>{
+    this.setState({page:`${toPage}`})
   }
 
 
@@ -41,13 +52,18 @@ class App extends Component {
       {name: "Pointers Chess Set", imageSrc: "./imgs/chess.png", projLink: "http://11bsouth.com/?p=474", subText: "A 3D design project", desc: "A chess set designed with new players in mind. Each piece has a crown that indicates the types of moves it can make on the board. The knight, for instance, has its points arranged in L-shapes and the queen has outward facing points in all eight directions. Prototypes were made using a 4-axis mill and the final set is currently on order for high quality 3D printing."},
     ]
 
+    const About = [{name: "Jesse Horwitz", imageSrc: "./imgs/thesis4.png", projLink: "http://11bsouth.com/?p=452", subText: "A display piece built from canvas and EL wire", desc: "Full stack web developer with a passion for solving urban Issues and finding new applications for emerging technology. I have experience working with Ruby on Rails, JavaScript, and React and a background in social science, digital media, hardware and product development. Generally I really enjoy thinking about cybernetics, cities, politics and technology."}]
+
     return (
       <div className="App">
-        <Header />
+        <Header changePage={this.changePage}/>
+        {this.state.page === "about" ? <Section secName={"About"} content={About}/> :
+        <React.Fragment>
           <Section secName={"Top Projects"} content={FeaturedWork}/>
           <Section secName={"Software"} content={SoftwareWork}/>
           <Section secName={"Hardware"} content={HardwareWork}/>
-        {/* <Footer /> */}
+        </React.Fragment>
+        }
       </div>
     );
   }

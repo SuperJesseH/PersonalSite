@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import imgs from "./imgs/thesis4.png"
 import './App.css';
 
 class Header extends Component {
@@ -13,14 +12,14 @@ class Header extends Component {
             <p>Web Developer, Creative Technologist, Pedestrian</p>
           </div>
           <span className="navBar">
-            <button>About Me</button>
-            <button>Projects</button>
-            <button>Blog</button>
+            <button onClick={()=>this.props.changePage("about")}>About Me</button>
+            <button onClick={()=>this.props.changePage("projects")}>Projects</button>
+            <a href="http://11bsouth.com/?page_id=566"><button>Blog</button></a>
           </span>
           <br />
         </div>
       </React.Fragment>
-    );
+    )
   }
 }
 
