@@ -31,7 +31,7 @@ class App extends Component {
 
       {name: "Sound Level Sign", imageSrc: "./imgs/HonkSign.png", projLink: "http://11bsouth.com/?p=343", subText: "Arduino powered interactive street sign with audio DSP, LED board and solar power", desc: "Modeled after the successful \"Your speed is...\" signs, the Sound Level Sign attempts to address vehicular noise pollution around major intersections. The Sign listens to ambient noise and counts the number of loud peaks it hears (typically car horns). As the Sign hears more loud sounds, the emoji face on the LED board becomes increasingly disgruntled providing emotional feedback to drivers. This project was designed to run on solar power and was made from a modified highway grade street sign."},
 
-      {name: "Radius", imageSrc: "./imgs/radius.png", projLink: "https://doom-index.herokuapp.com", subText: "A people counting device built with an ESP8266 Wifi module", desc: "My graduate school thesis project, a wearable device that uses Wifi packet sniffing to estimate the nearby population. Data are visualized in realtime on the device and stored in CSV format. The goal is to establish a new urban metric of “experienced population density” to fill important gaps in current census based density metrics."}
+      {name: "Radius", imageSrc: "./imgs/radius.png", projLink: "https://itp.nyu.edu/thesis2017/project/jesse-a-horwitz", subText: "A people counting device built with an ESP8266 Wifi module", desc: "My graduate school thesis project, a wearable device that uses Wifi packet sniffing to estimate the nearby population. Data are visualized in realtime on the device and stored in CSV format. The goal is to establish a new urban metric of “experienced population density” to fill important gaps in current census based density metrics."}
     ]
 
     const SoftwareWork = [
@@ -52,7 +52,9 @@ class App extends Component {
       {name: "Pointers Chess Set", imageSrc: "./imgs/chess.png", projLink: "http://11bsouth.com/?p=474", subText: "A 3D design project", desc: "A chess set designed with new players in mind. Each piece has a crown that indicates the types of moves it can make on the board. The knight, for instance, has its points arranged in L-shapes and the queen has outward facing points in all eight directions. Prototypes were made using a 4-axis mill and the final set is currently on order for high quality 3D printing."},
     ]
 
-    const About = [{name: "Jesse Horwitz", imageSrc: "./imgs/thesis4.png", projLink: "http://11bsouth.com/?p=452", subText: "A display piece built from canvas and EL wire", desc: "Full stack web developer with a passion for solving urban Issues and finding new applications for emerging technology. I have experience working with Ruby on Rails, JavaScript, and React and a background in social science, digital media, hardware and product development. Generally I really enjoy thinking about cybernetics, cities, politics and technology."}]
+    const Ventures = [{name: "ProDigit Accessories", imageSrc: "./imgs/prodigit.png", projLink: "https://theprodigit.com/", subText: "A 3D printed smartphone accessories company", desc: "ProDigit Accessories designs and fabricates smartphone grips an accessories. I personally design and fabricate our current product and work with my co-founder Scott Tong on manufacturing logistics, packaging and retail. Contact me for bulk orders or custom designs!"}]
+
+    const About = [{name: "Jesse Horwitz", imageSrc: "./imgs/thesis4.png", projLink: "http://www.linkedin.com/in/j-horwitz", subText: "", desc: "Full stack web developer with a passion for solving urban Issues and finding new applications for emerging technology. I have experience working with Ruby on Rails, JavaScript, and React and a background in social science, digital media, hardware and product development. Generally I really enjoy thinking about cybernetics, cities, politics and technology."}]
 
     return (
       <div className="App">
@@ -62,6 +64,7 @@ class App extends Component {
           <Section secName={"Top Projects"} content={FeaturedWork}/>
           <Section secName={"Software"} content={SoftwareWork}/>
           <Section secName={"Hardware"} content={HardwareWork}/>
+          <Section secName={"Ventures"} content={Ventures}/>
         </React.Fragment>
         }
       </div>

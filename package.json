@@ -2,6 +2,7 @@
   "name": "11bsouth",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://11bsouth.com/homepage",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
