@@ -15,8 +15,8 @@ class Project extends Component {
           <img src={require(`${this.props.content.imageSrc}`)} alt={this.props.content.name}/>
           <div className="Text">
             <h2 className="ProjectTitle">{this.props.content.name}</h2>
-            <div className="ProjectSubtext">{this.props.content.subText}</div>
-            <p className="ProjectText">{this.props.content.desc}</p>
+            <div className="ProjectSubtext" dangerouslySetInnerHTML={{__html:this.props.content.subText}}></div>
+            <p className="ProjectText" dangerouslySetInnerHTML={{__html:this.props.content.desc}}></p>
           </div>
         </a>
       </React.Fragment>
