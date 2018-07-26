@@ -123,6 +123,12 @@
   margin-top: -1em;
 }
 
+.project .ProjectSubtext a{
+  text-decoration: none;
+  color: black;
+}
+
+
 .project .ProjectText{
   text-align: justify;
 }
