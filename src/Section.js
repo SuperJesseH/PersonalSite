@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import imgs from "./imgs/DoomIndex.png"
 import Project from "./Project"
 import './App.css';
 

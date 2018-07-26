@@ -128,6 +128,22 @@
   color: black;
 }
 
+/* .project .ProjectSubtext button{
+  background-color: inherit;
+  border: none;
+  font-size: 16px;
+  color: black;
+  text-decoration: bold;
+  display: inline-block;
+  border-radius: .25em;
+  outline-color: #8179B7;
+  text-align: left;
+}
+
+.project .ProjectSubtext button:hover{
+background-color: #8179B7;
+} */
+
 
 .project .ProjectText{
   text-align: justify;

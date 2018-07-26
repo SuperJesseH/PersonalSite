@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Header from "./Header"
 import Section from "./Section"
-import About from "./About"
-import imgs from "./imgs/thesis4.png"
 import './App.css';
 
 class App extends Component {
@@ -26,12 +24,12 @@ class App extends Component {
 
   render() {
     const FeaturedWork = [
-      {name: "DIY Doom Index", imageSrc: "./imgs/doom.png", projLink: "https://doom-index.herokuapp.com", subText: "React Web App with Rails Backend", desc: "DIY Doom Index uses macroeconomic, political and environmental data to create a daily index of doom and turmoil. Users can weight and enable provided datasets that will contribute to a calculated doom value."},
+      {name: "DIY Doom Index", imageSrc: "./imgs/doom.png", projLink: "https://github.com/SuperJesseH/diy_doomsday", subText: "React Web App with Rails Backend</br><button><a href='https://vimeo.com/281877528'/>Video Demo</button><button><a href='https://github.com/SuperJesseH/diy_doomsday'/>Github</button><button><a href='https://doom-index.herokuapp.com'/>Heroku</button>", desc: "DIY Doom Index uses macroeconomic, political and environmental data to create a daily index of doom and turmoil. Users can weight and enable provided datasets that will contribute to a calculated doom value."},
 
 
-      {name: "Sound Level Sign", imageSrc: "./imgs/HonkSign.png", projLink: "http://11bsouth.com/?p=343", subText: "Arduino powered interactive street sign with audio DSP, LED board and solar power", desc: "Modeled after the successful \"Your speed is...\" signs, the Sound Level Sign attempts to address vehicular noise pollution around major intersections. The Sign listens to ambient noise and counts the number of loud peaks it hears (typically car horns). As the Sign hears more loud sounds, the emoji face on the LED board becomes increasingly disgruntled providing emotional feedback to drivers. This project was designed to run on solar power and was made from a modified highway grade street sign."},
+      {name: "Sound Level Sign", imageSrc: "./imgs/HonkSign.png", projLink: "http://11bsouth.com/?p=343", subText: "Arduino powered interactive street sign with audio DSP, LED board and solar power</br><button><a href='https://vimeo.com/281866358'/>Video Demo</button><button><a href='http://11bsouth.com/?p=343'/>Documentation</button>", desc: "Modeled after the successful \"Your speed is...\" signs, the Sound Level Sign attempts to address vehicular noise pollution around major intersections. The Sign listens to ambient noise and counts the number of loud peaks it hears (typically car horns). As the Sign hears more loud sounds, the emoji face on the LED board becomes increasingly disgruntled providing emotional feedback to drivers. This project was designed to run on solar power and was made from a modified highway grade street sign."},
 
-      {name: "Radius", imageSrc: "./imgs/radius.png", projLink: "https://itp.nyu.edu/thesis2017/project/jesse-a-horwitz", subText: "A people counting device built with an ESP8266 Wifi module", desc: "My graduate school thesis project, a wearable device that uses Wifi packet sniffing to estimate the nearby population. Data are visualized in realtime on the device and stored in CSV format. The goal is to establish a new urban metric of “experienced population density” to fill important gaps in current census based density metrics."}
+      {name: "Radius", imageSrc: "./imgs/radius.png", projLink: "https://itp.nyu.edu/thesis2017/project/jesse-a-horwitz", subText: "A people counting device built with an ESP8266 Wifi module</br><button><a href='https://vimeo.com/217549741'/>Video Presentation</button><button><a href='https://itp.nyu.edu/thesis2017/project/jesse-a-horwitz'/>Documentation</button>", desc: "My graduate school thesis project, a wearable device that uses Wifi packet sniffing to estimate the nearby population. Data are visualized in realtime on the device and stored in CSV format. The goal is to establish a new urban metric of “experienced population density” to fill important gaps in current census based density metrics."}
     ]
 
     const SoftwareWork = [
